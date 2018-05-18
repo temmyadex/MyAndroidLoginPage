@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    android:background="@drawable/hopehouse"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:padding="50dp"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:text="Let Learn Together"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif-light"
+        android:padding="16dp"
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+        android:drawableStart="@drawable/ic_account_circle_black_24dp"
+        android:drawablePadding="5dp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/white"
+        android:hint="@+string/Username"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:drawableLeft="@drawable/ic_security_black_24dp"
+        android:drawableStart="@drawable/ic_security_black_24dp"
+        android:drawablePadding="5dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:textSize="24sp"
+        android:inputType="textPassword"
+        android:layout_marginBottom="40dp"
+        android:hint="Password"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@+string/login"
+            android:onClick="LoginButton"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@+string/Sign Up"/>
+    </LinearLayout>
+
+</LinearLayout>
